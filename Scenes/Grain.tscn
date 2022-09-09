@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scenes/Pickup.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Sprites/grain.png" type="Texture" id=2]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 23.7981
+height = 24.5106
+
+[node name="Pickup" instance=ExtResource( 1 )]
+texture = ExtResource( 2 )
+size = 3.0
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." index="0"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" index="0"]
+rotation = 1.58505
+shape = SubResource( 1 )
