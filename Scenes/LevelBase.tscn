@@ -12,6 +12,9 @@ position = Vector2( 1623, 564 )
 scale = Vector2( 4.4125, 2.84333 )
 texture = ExtResource( 3 )
 script = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Walls" type="Node2D" parent="Background"]
 
@@ -19,19 +22,27 @@ script = ExtResource( 2 )
 position = Vector2( -397.59, -297.852 )
 scale = Vector2( 0.301205, 0.357995 )
 collision_layer = 4
-collision_mask = 3
+collision_mask = 0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Background/Walls/StaticBody2D"]
 position = Vector2( 632, 1160 )
 scale = Vector2( 3.32483, 2.85233 )
 build_mode = 1
 polygon = PoolVector2Array( 55, -99, 88, -95, 102.837, -74.1791, 116.151, -47.7903, 129, -17, 129, 16, 110.704, 69.0239, 93.4566, 86.2646, 80.7478, 91.5423, -7, 95, -89, 76, -109.279, 62.3387, -120, 45, -121.08, 16.9501, -118, -15, -103.227, -43.92, -77, -67, -17, -92 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Pickup" parent="Background" instance=ExtResource( 4 )]
-position = Vector2( -55.5239, -68.5815 )
+position = Vector2( -15.6374, -56.9755 )
 scale = Vector2( 0.120158, 0.191365 )
+offset = Vector2( -0.00317383, 0.00012207 )
+unit = 3
+diameter = 2.0
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 1903, 685 )
+speed = 1
+diameter = 50.0
 
 [connection signal="bounding_box" from="Background" to="Player" method="borders"]

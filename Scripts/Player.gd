@@ -1,9 +1,14 @@
 extends KinematicBody2D
 
-export(int) var speed = 5
-
 var velocity = Vector3.ZERO
-# Called when the node enters the scene tree for the first time.
+
+export(int) var speed = 5
+var SizeClass = load("res://Scripts/Metric_Size.gd").Size
+export(Metric_Size.Size.MetricSize) var unit
+export(float) var diameter
+var curr_size
+
+
 
 var min_x : int
 var min_y : int
@@ -11,11 +16,12 @@ var max_x : int
 var max_y : int
 
 
-
 var ini_size : Vector2
 
 func _ready():
+	curr_size = SizeClass.new(diameter,unit)
 	ini_size = scale
+	print(curr_size.get_num())
 
 func borders(max_left,max_top,max_right,max_bottom):
 	min_x = max_left
