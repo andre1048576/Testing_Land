@@ -9,19 +9,19 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "Reference",
-"class": "Metric_Size",
-"language": "GDScript",
-"path": "res://Scripts/Metric_Size.gd"
-}, {
 "base": "Sprite",
 "class": "Pickup",
 "language": "GDScript",
 "path": "res://Scripts/Pickup.gd"
+}, {
+"base": "Node",
+"class": "Scale",
+"language": "GDScript",
+"path": "res://Scripts/Scale.gd"
 } ]
 _global_script_class_icons={
-"Metric_Size": "",
-"Pickup": ""
+"Pickup": "",
+"Scale": ""
 }
 
 [application]

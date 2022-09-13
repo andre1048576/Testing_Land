@@ -9,7 +9,8 @@ height = 24.5106
 
 [node name="Pickup" instance=ExtResource( 1 )]
 texture = ExtResource( 2 )
-size = 3.0
+diameter = 3.0
+Unit = 4
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." index="0"]
 collision_layer = 2

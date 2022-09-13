@@ -34,15 +34,59 @@ __meta__ = {
 }
 
 [node name="Pickup" parent="Background" instance=ExtResource( 4 )]
-position = Vector2( -15.6374, -56.9755 )
+position = Vector2( 11.1047, 17.585 )
 scale = Vector2( 0.120158, 0.191365 )
-offset = Vector2( -0.00317383, 0.00012207 )
-unit = 3
-diameter = 2.0
+offset = Vector2( -0.00292969, -0.00012207 )
+
+[node name="Pickup2" parent="Background" instance=ExtResource( 4 )]
+position = Vector2( -88.8386, -5.62726 )
+scale = Vector2( 0.120158, 0.191365 )
+offset = Vector2( -0.00292969, -0.00012207 )
+
+[node name="Pickup3" parent="Background" instance=ExtResource( 4 )]
+position = Vector2( -9.74512, 52.7551 )
+scale = Vector2( 0.120158, 0.191365 )
+offset = Vector2( -0.00292969, -0.00012207 )
+
+[node name="Pickup4" parent="Background" instance=ExtResource( 4 )]
+position = Vector2( -25.3826, -3.86871 )
+scale = Vector2( 0.120158, 0.191365 )
+offset = Vector2( -0.00292969, -0.00012207 )
+
+[node name="Pickup5" parent="Background" instance=ExtResource( 4 )]
+position = Vector2( 12.6912, -26.0258 )
+scale = Vector2( 0.120158, 0.191365 )
+offset = Vector2( -0.00292969, -0.00012207 )
+
+[node name="Pickup6" parent="Background" instance=ExtResource( 4 )]
+position = Vector2( -52.5781, -16.1782 )
+scale = Vector2( 0.120158, 0.191365 )
+offset = Vector2( -0.00292969, -0.00012207 )
+
+[node name="Pickup7" parent="Background" instance=ExtResource( 4 )]
+position = Vector2( -28.1021, -100.938 )
+scale = Vector2( 0.120158, 0.191365 )
+offset = Vector2( -0.00292969, -0.00012207 )
+
+[node name="Pickup8" parent="Background" instance=ExtResource( 4 )]
+position = Vector2( 18.3567, -91.0904 )
+scale = Vector2( 0.120158, 0.191365 )
+offset = Vector2( -0.00292969, -0.00012207 )
+
+[node name="Pickup9" parent="Background" instance=ExtResource( 4 )]
+position = Vector2( -78.6404, -79.4843 )
+scale = Vector2( 0.120158, 0.191365 )
+offset = Vector2( -0.00292969, -0.00012207 )
+
+[node name="Pickup10" parent="Background" instance=ExtResource( 4 )]
+position = Vector2( 26.9688, -59.0857 )
+scale = Vector2( 0.120158, 0.191365 )
+offset = Vector2( -0.00292969, -0.00012207 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 1903, 685 )
-speed = 1
-diameter = 50.0
+speed = 700
+diameter = 4.0
+Unit = 4
 
 [connection signal="bounding_box" from="Background" to="Player" method="borders"]

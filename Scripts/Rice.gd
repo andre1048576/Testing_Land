@@ -1,4 +1,4 @@
-extends Sprite
+extends Pickup
 
 
 # Declare member variables here. Examples:
