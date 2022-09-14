@@ -90,3 +90,4 @@ diameter = 4.0
 Unit = 4
 
 [connection signal="bounding_box" from="Background" to="Player" method="borders"]
+[connection signal="size_change" from="Player" to="Background" method="_on_player_increase"]

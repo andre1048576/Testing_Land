@@ -1,5 +1,6 @@
 class_name Pickup
 extends Sprite
+
 var curr_size
 
 # Declare member variables here. Examples:

@@ -2,6 +2,8 @@ extends KinematicBody2D
 
 var velocity = Vector3.ZERO
 
+signal size_change
+
 export(int) var speed = 5
 
 onready var MetricSize = $Scale
